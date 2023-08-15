@@ -10,7 +10,7 @@ document.querySelector("#pbottom").innerHTML = clutter;
 }
 
 var score = 0;
-var timer = 5;
+var timer = 30;
 var rn = 0;
 
 function changeScore(){
