@@ -10,7 +10,7 @@ document.querySelector("#pbottom").innerHTML = clutter;
 }
 
 var score = 0;
-var timer = 30;
+var timer = 5;
 var rn = 0;
 
 function changeScore(){
@@ -27,7 +27,10 @@ function runTimer(){
         }
         else {
             clearInterval(timeset);
-            document.querySelector("#pbottom").innerHTML = "Game Over";
+            document.querySelector("#pbottom").innerHTML = `<div id="game"><h1>Game Over</h1><h2>You scored ${score} points.</h2></div>`;
+            document.querySelector("#pbottom").style = `background-color: #FF0000;
+            background-image: linear-gradient(180deg, #FF0000 22%, #ffc262 74%);
+            `
         }    
     }, 1000);
 }
